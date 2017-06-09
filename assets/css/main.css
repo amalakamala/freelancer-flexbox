@@ -20,6 +20,8 @@ body{
 #navegador.flex-container{
 	justify-content: flex-end;
 	align-items: center;
+	position: fixed;  	
+	z-index: 1000;	
 }
 
 #navegador{
@@ -63,7 +65,8 @@ body{
 	width: 80%;
 	color: white;
 	text-align: center;
-	padding: 80px 0 ;
+	padding: 50px 0 ;
+	margin-top: 150px;
 }
 
 .div-info h1{
@@ -132,7 +135,7 @@ hr.star-primary:after {
 	padding-bottom: 50px;
 }
 
-.div-info{
+.div-info-portafolio{
 	padding: 30px;
 }
 
@@ -251,20 +254,86 @@ hr.star-primary:after {
 }
 
 
+/*-------------- ABOUT -------------*/
+
+#contact.flex-container{
+	flex-direction: column;	
+	align-items: center;
+	padding: 50px 0;	
+}
 
 
+.div-contact h1{
+	text-align: center;
+	font-size: 42px;
+	margin: 10px;
+	color: #202F3F;
+}
+
+.contact-form hr{
+	width: 600px;	
+	height: 1px;
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.form-ingreso label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+
+}
+
+.form-ingreso input, 
+.form-ingreso textarea {
+	width: 600px;
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 1.3em;
+    background: 0 0;
+    box-shadow: none;
+    resize: none;
+}
+
+.form-ingreso input:focus, 
+.form-ingreso textarea:focus {
+	outline: 0;
+    box-shadow: none;
+   	opacity: 0.5;
+}	
+
+.el-boton{
+	margin-top: 30px;
+}
+
+.el-boton a{
+	padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    background-color: #18BC9C;
+    font-weight: 700;  
+    color: #FFF;  
+    text-decoration: none;
+}
 
 
-
-
-
-
-
-
-
-
-
-
+.el-boton a:hover{
+	background-color: #128f76;
+}
 
 
 
