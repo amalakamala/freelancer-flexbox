@@ -1,0 +1,274 @@
+ * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;	
+}
+
+.flex-container{
+	display : flex;
+}
+
+
+/*-------------- HEADER -------------*/
+
+#navegador.flex-container{
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#navegador{
+	background-color: #182330;
+	width: 100%;
+	height: 120px;
+	padding-right: 120px;
+	padding-left: 120px;
+}
+
+.logo{
+	margin-right: auto;
+	font-size: 1.8em;
+	color: white;
+}
+
+#navegador a{
+	color: white;
+	text-decoration: none;
+	padding: 0 15px;
+	font-size: 0.9em;	
+}
+
+#navegador a:hover{
+	background-color: #1EA375;
+	padding: 15px;
+}
+
+
+/*-------------- BANNER BOOTSTRAP -------------*/
+
+
+#el-banner.flex-container{
+	height: auto;
+	background-color: #1EB18A;
+	flex-direction: column;
+	align-items: center;
+}
+
+.div-info{
+	width: 80%;
+	color: white;
+	text-align: center;
+	padding: 80px 0 ;
+}
+
+.div-info h1{
+	font-size: 60px;
+	margin: 10px;
+}
+
+.div-about h1{
+	font-size: 40px;
+	margin: 10px;
+}
+
+.div-info h3{
+	margin-top: 0;
+	font-weight: 300;
+}
+
+/*La estrella de la muerte*/
+hr.star-light,
+hr.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 0px
+}
+hr.star-light:after,
+hr.star-primary:after {
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.6em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+hr.star-light {
+  border-color: white;
+}
+hr.star-light:after {
+  background-color: #1EB18A;
+  color: white;
+}
+hr.star-primary {
+  border-color: #2C3E50;
+}
+hr.star-primary:after {
+  background-color: white;
+  color: #2C3E50;
+}
+
+/*-------------- PORTAFOLIO -------------*/
+
+#portafolio.flex-container{
+	flex-direction: column;
+	align-items: center;
+}
+
+#fila-uno-id.flex-container{
+	flex-direction: row;
+	justify-content: center;
+}
+
+#portafolio{
+	padding-bottom: 50px;
+}
+
+.div-info{
+	padding: 30px;
+}
+
+.text-portafolio{
+	color: #202F3F;
+	font-size: 42px;
+}
+
+.text-portafolio{
+	margin-bottom: 0;
+}
+
+.item{
+	align-items: center;
+	width: 400px;
+	padding: 10px;
+}
+
+.item img{
+	width: 100%;
+	overflow: hidden;
+}
+
+
+/* LUPA */
+
+.item{
+  position: relative;
+  cursor: pointer;
+}
+.item:after {
+    content: "\f00e";
+    font-size: 5rem;
+    position: absolute;
+    width: 95%;
+    height: 93%;
+    top: 9px;
+    left: 10px;
+    right: 0;
+    background-color: #18BC9C;
+    color: #fff;
+    font-family: "FontAwesome";
+    box-sizing: border-box;
+    text-align: center;
+    padding: 25% 0;
+    opacity: 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.item:hover:after {
+	opacity: 0.98;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+
+/*-------------- ABOUT -------------*/
+
+#about.flex-container{
+	flex-direction: column;	
+	align-items: center;
+	padding: 50px 250px;
+}
+
+#about{
+	background-color: #1EB18A;	
+}
+
+#div-about h1{
+	text-align: center;
+	color: white;
+	font-size: 42px;
+	margin: 10px;	
+}
+
+.about-texto{
+	color: white;
+	margin-bottom: 40px;
+}
+
+.about-texto-uno,
+.about-texto-dos{
+	padding: 0 15px;
+	line-height: 29px;
+	font-size: 24;
+}
+
+.boton-about{
+	text-align: center;
+}
+
+.boton-about a{
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+    margin-top: 15px;
+    padding: 10px 16px;
+	text-decoration: none;
+	border-radius: 6px;    
+}
+
+.boton-about a:hover{
+    color: #18BC9C;
+    background: #fff;
+    border: 2px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
